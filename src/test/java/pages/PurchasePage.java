@@ -32,10 +32,10 @@ public class PurchasePage {
         driver.findElement(name).sendKeys("Arnav");
         wait.sleep();
 
-        driver.findElement(address).sendKeys("Pune");
+        driver.findElement(address).sendKeys("Banglore");
         wait.sleep();
 
-        driver.findElement(city).sendKeys("Pune");
+        driver.findElement(city).sendKeys("Banglore");
         wait.sleep();
 
         driver.findElement(state).sendKeys("Maharashtra");
