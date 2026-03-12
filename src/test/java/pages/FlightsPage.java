@@ -22,11 +22,14 @@ public class FlightsPage {
 
     public boolean isFlightsDisplayed()
     {
-        return wait.waitForElementVisible(flightHeader).isDisplayed();
+        boolean visible = wait.waitForElementVisible(flightHeader).isDisplayed();
+        wait.sleep();
+        return visible;
     }
 
     public void chooseFirstFlight()
     {
         wait.waitForElementClickable(chooseFlight).click();
+        wait.sleep();
     }
 }

@@ -21,7 +21,6 @@ public class FlightBookingTest extends BaseTest {
         home.selectDestination("London");
         home.clickFindFlights();
 
-
         FlightsPage flights = new FlightsPage(driver);
 
         boolean flightsVisible = flights.isFlightsDisplayed();
@@ -32,15 +31,11 @@ public class FlightBookingTest extends BaseTest {
 
         flights.chooseFirstFlight();
 
-
-
         PurchasePage purchase = new PurchasePage(driver);
 
         purchase.enterDetails();
         purchase.purchaseFlight();
 
-
-    
         ConfirmationPage confirm = new ConfirmationPage(driver);
 
         String message = confirm.getConfirmationMessage();

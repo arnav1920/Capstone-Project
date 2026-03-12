@@ -33,4 +33,13 @@ public class WaitUtils {
     {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
     }
+
+    public void sleep()
+    {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
